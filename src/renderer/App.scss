@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: #1e1e1e;
+  color: #cccccc;
+  overflow: hidden;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+  &-header {
+    background: #2d2d2d;
+    padding: 8px 16px;
+    border-bottom: 1px solid #3e3e3e;
+    text-align: center;
+    
+    h1 {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+    
+    p {
+      font-size: 12px;
+      color: #888;
+    }
+  }
+  
+  &-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  &-footer {
+    background: #2d2d2d;
+    padding: 4px 16px;
+    border-top: 1px solid #3e3e3e;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #888;
+  }
+}
+
+.editor-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  background: #3c3c3c;
+  padding: 8px 16px;
+  border-bottom: 1px solid #4e4e4e;
+  display: flex;
+  gap: 8px;
+  
+  .btn {
+    background: #007acc;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    
+    &:hover {
+      background: #005a9e;
+    }
+    
+    &:active {
+      background: #004578;
+    }
+  }
+}
+
+.editor-area {
+  flex: 1;
+  padding: 16px;
+}
+
+.text-editor {
+  width: 100%;
+  height: 100%;
+  background: #1e1e1e;
+  color: #cccccc;
+  border: 1px solid #3e3e3e;
+  border-radius: 4px;
+  padding: 16px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  resize: none;
+  outline: none;
+  
+  &:focus {
+    border-color: #007acc;
+    box-shadow: 0 0 0 2px rgba(0, 122, 204, 0.2);
+  }
+  
+  &::placeholder {
+    color: #666;
+  }
+}
