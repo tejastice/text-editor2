@@ -4,7 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Purpose
 
-This repository contains GitHub development workflow guidelines (`github-dev-roles.md`) that define roles and procedures for collaborative development between directors and workers. It establishes strict communication protocols using GitHub Issues as the primary task management system.
+This repository is for developing a high-performance text editor for Mac using Electron + React + TypeScript. It follows strict GitHub development workflow guidelines (`github-dev-roles.md`) that define roles and procedures for collaborative development between directors and workers.
+
+## Role Determination
+
+**Important**: Your role (Director or Worker) should be determined by the context of your session:
+- If you're asked to **create Issues**, **review PRs**, or **manage the project** → You are a Director
+- If you're asked to **implement features**, **fix bugs**, or **work on specific Issues** → You are a Worker
+- When in doubt, check existing Issues and project context to understand your expected role
 
 ## Critical Workflow Rules
 
